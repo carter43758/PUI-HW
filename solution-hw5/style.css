@@ -159,6 +159,10 @@ select {
     text-decoration: underline;
 }
 
+.roll-element {
+    margin-left: 590px;
+}
+
 #checkout {
     float: right;
     border: 2px black solid;
