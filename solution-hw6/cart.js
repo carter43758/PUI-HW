@@ -7,7 +7,6 @@ class Roll {
         this.glazing = rollGlazing;
         this.size = packSize;
         this.basePrice = rollPrice;
-        this.ImageFile = 
         this.element = null;
     }
 }
@@ -15,19 +14,9 @@ class Roll {
 function addToCart(currentRoll) {
     const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
     cart.push(newRoll);
+    saveToLocalStorage();
     return cart;
 }
-
-// calling new Rolls and adding them to cart
-const original = new Roll('Original', 'Sugar Milk', 1, 2.49);
-const walnut = new Roll('Walnut', 'Vanilla Milk', 12, 3.49);
-const raisin = new Roll('Raisin', 'Sugar Milk', 3, 2.99);
-const apple = new Roll('Apple', 'Original', 3, 3.49);
-
-addToCart(original);
-addToCart(walnut);
-addToCart(raisin);
-addToCart(apple);
 
 //reflecting new cart with roll info
 function createItem(newRoll) {
@@ -108,16 +97,15 @@ function updatePrice() {
 function removeItems(newRoll) {
     newRoll.element.remove();
 
-    const index = cart.indexOf(newRoll); // Find the index of the roll in the cart
-    if (index > -1) {
-        cart.splice(index, 1); // Remove the roll from the array
-    }
-
-    if (cart.length === 0) {
-        console.log("Your cart is empty.");
-    }
+    cart.delete(newRoll);
+    
+    // const index = cart.indexOf(newRoll); // Find the index of the roll in the cart
+    // if (index > -1) {
+    //     cart.splice(index, 1); // Remove the roll from the array
+    // }
 
     updatePrice();
+    saveToLocalStorage();
 }
 
 const rolls = {
