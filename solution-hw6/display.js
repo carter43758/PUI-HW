@@ -1,50 +1,3 @@
-const rolls = {
-    "Original": {
-        name: "Original Cinnamon Roll",
-        basePrice: 2.49,
-        imageFile: "original-cinnamon-roll.jpg"
-    },
-    "Apple": {
-        name: "Apple Cinnamon Roll",
-        basePrice: 3.49,
-        imageFile: "apple-cinnamon-roll.jpg"
-    },
-    "Raisin": {
-        name: "Raisin Cinnamon Roll",
-        basePrice: 2.99,
-        imageFile: "raisin-cinnamon-roll.jpg"
-    },
-    "Walnut": {
-        name: "Walnut Cinnamon Roll",
-        basePrice: 3.49,
-        imageFile: "walnut-cinnamon-roll.jpg"
-    },
-    "Double-Chocolate": {
-        name: "Double-Chocolate Cinnamon Roll",
-        basePrice: 3.99,
-        imageFile: "double-chocolate-cinnamon-roll.jpg"
-    },
-    "Strawberry": {
-        name: "Strawberry Cinnamon Roll",
-        basePrice: 3.99,
-        imageFile: "strawberry-cinnamon-roll.jpg"
-    }    
-};
-
-const glazingOptions = [
-    {name: "Keep Original", priceAdaptation: 0.00},
-    {name: "Sugar Milk", priceAdaptation: 0.00},
-    {name: "Vanilla Milk", priceAdaptation: 0.50},
-    {name: "Double Chocolate", priceAdaptation: 1.50}
-];
-
-const packSizeOptions = [
-    {name: "1", multiplier: 1},
-    {name: "3", multiplier: 3},
-    {name: "6", multiplier: 5},
-    {name: "12", multiplier: 10}
-];
-
 //getting current roll
 let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
@@ -61,8 +14,6 @@ rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
 //pulling selections
-let glazingPrice; 
-let packSize;
 let selectGlaze;
 let selectPack;
 
@@ -89,7 +40,6 @@ window.onload = function selectOption() {
 
 //updating price
 function updatePrice() {   
-    // const basePrice = 2.49;
     let price = ((currentRoll.basePrice + glazingPrice) * packSize).toFixed(2);
     let newPrice =  document.querySelector('#price');
     newPrice.innerText = "$" + price;
@@ -105,7 +55,6 @@ function packChange(selectPack) {
     packSize = packSizeOptions.find(pack => pack.name === selectPack.value).multiplier;
     updatePrice();
 }
-
 
 //adding to Cart
 let cart = [];
