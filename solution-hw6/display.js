@@ -114,7 +114,7 @@ class Roll {
         this.type = rollType;
         this.glazing = rollGlazing;
         this.size = packSize;
-        this.basePrice = rollPrice;
+        this.price = rollPrice;
         this.element = null;
     }
 }
@@ -123,7 +123,7 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
-    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, price);
+    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, newPrice.value);
     cart.push(newRoll);
     saveToLocalStorage();
     return cart;
