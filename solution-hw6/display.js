@@ -65,9 +65,9 @@ rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
 //pulling selections
 let glazingPrice;
+let packPrice;
 
 window.onload = function selectOption() {
-    
     
     for (i = 0; i < glazingOptions.length; i++)
     {
@@ -88,7 +88,7 @@ window.onload = function selectOption() {
 
 //updating price
 function updatePrice() {   
-    let totalPrice = ((currentRoll.basePrice + glazingPrice) * packSize).toFixed(2);
+    let totalPrice = ((currentRoll.basePrice + glazingPrice) * packPrice).toFixed(2);
     rollPrice.innerText = "$" + totalPrice;
 }
 
