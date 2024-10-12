@@ -47,4 +47,3 @@ const rollImage = document.querySelector('#original2');
 rollText.innerText = currentRoll.name;
 rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
-const button = document.getElementById('add');
