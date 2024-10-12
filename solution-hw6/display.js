@@ -49,22 +49,21 @@ const packSizeOptions = [
 //getting current roll
 let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
-let rollType = params.get('roll');
+let rollName = params.get('roll');
 let currentRoll = rolls[rollType];
 
 //updating text, price, & image
-const rollText = document.querySelector('#top1');    
+const rollType = document.querySelector('#top1');    
 const rollPrice = document.querySelector('#price');
 const rollImage = document.querySelector('#original2');
-const selectGlaze = document.querySelector('#glazing');
-const selectPack = document.querySelector('#pack');
+const rollGlazing = document.querySelector('#glazing');
+const packSize = document.querySelector('#pack');
 
 rollText.innerText = currentRoll.name;
 rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
 //pulling selections
-let packSize;
 let glazingPrice;
 
 window.onload = function selectOption() {
