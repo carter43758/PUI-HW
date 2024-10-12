@@ -104,8 +104,6 @@ function packChange(selectPack) {
 }
 
 //adding to Cart
-let cart = [];
-
 class Roll {
     constructor(rollType, rollGlazing, packSize, rollPrice) {
         this.type = rollType;
