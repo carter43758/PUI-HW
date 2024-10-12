@@ -44,9 +44,8 @@ const rollText = document.querySelector('#top1');
 const rollPrice = document.querySelector('#price');
 const rollImage = document.querySelector('#original2');
 
-// rollText.innerText = currentRoll.name;
-// rollPrice.innerText = currentRoll.basePrice;
+rollText.innerText = currentRoll.name;
+rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
-//adding to cart
 const button = document.getElementById('add');
