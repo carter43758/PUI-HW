@@ -129,6 +129,7 @@ function addToCart(currentRoll) {
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
     localStorage.setItem('storedItems', rollArrayString);
+    console.log(cart);
 }
 
 if (localStorage.getItem('storedItems') != null) {
