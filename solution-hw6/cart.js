@@ -1,3 +1,23 @@
+//storage
+function retrieveFromLocalStorage() {
+    const rollArrayString = localStorage.getItem('storedItems');
+    const rollArray = JSON.parse(rollArrayString);
+    cart = rollArray;
+}
+
+if (localStorage.getItem('storedItems') != null) {
+    retrieveFromLocalStorage();
+}
+
+//initiating for loop - from here https://stackoverflow.com/questions/3842614/how-do-i-call-a-javascript-function-on-page-load
+window.onload = function () {   
+    for (const newRoll of cart) {
+        createItem(newRoll);
+    }
+
+    updatePrice();
+}
+
 //reflecting new cart with roll info
 function createItem(newRoll) {
     retrieveFromLocalStorage();
@@ -18,18 +38,6 @@ function createItem(newRoll) {
     updateItems(newRoll);
     updatePrice();
     saveToLocalStorage();
-}
-
-//initiating for loop - from here https://stackoverflow.com/questions/3842614/how-do-i-call-a-javascript-function-on-page-load
-window.onload = function () {
-    let cart = [];
-    retrieveFromLocalStorage();
-    
-    for (const newRoll of cart) {
-        createItem(newRoll);
-    }
-
-    updatePrice();
 }
 
 function updateItems(newRoll) {
