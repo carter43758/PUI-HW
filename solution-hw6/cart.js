@@ -1,6 +1,4 @@
 //storage
-let cart = [];
-
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
     localStorage.setItem('storedItems', rollArrayString);
