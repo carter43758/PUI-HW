@@ -49,17 +49,17 @@ const packSizeOptions = [
 //getting current roll
 let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
-let rollName = params.get('roll');
+let rollType = params.get('roll');
 let currentRoll = rolls[rollType];
 
 //updating text, price, & image
-const rollType = document.querySelector('#top1');    
+const rollName = document.querySelector('#top1');    
 const rollPrice = document.querySelector('#price');
 const rollImage = document.querySelector('#original2');
 const rollGlazing = document.querySelector('#glazing');
 const packSize = document.querySelector('#pack');
 
-rollText.innerText = currentRoll.name;
+rollName.innerText = currentRoll.name;
 rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
