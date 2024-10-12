@@ -16,7 +16,7 @@ hr {
     border: 2px solid black;
 }
 
-#cart, #prod, #cart2, #prod2, #top1 {
+#cart, #prod, #cart2, #prod2 {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     float: right;
@@ -93,7 +93,7 @@ a:link, a:visited{
     margin-top: 8%;
 }
 
-.text p{
+.text p, #top1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
