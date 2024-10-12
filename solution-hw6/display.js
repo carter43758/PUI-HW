@@ -123,8 +123,8 @@ class Roll {
     }
 }
 
-function addToCart() {
-    const newRoll = new Roll(rollType, rollGlazing, packSize, rollPrice);
+function addToCart(currentRoll) {
+    const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.price)
     cart.push(newRoll);
     saveToLocalStorage();
     return cart;
