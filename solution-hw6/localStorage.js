@@ -1,6 +1,4 @@
 //HW6
-let cart = [];
-
 function saveToLocalStorage() {
     const rollArray = Array.from(cart);
     const rollArrayString = JSON.stringify(rollArray);

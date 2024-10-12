@@ -1,4 +1,6 @@
 //initializing cart function, calling cart + Roll class
+let cart = [];
+
 class Roll {
     constructor(rollType, rollGlazing, packSize, rollPrice) {
         this.type = rollType;
