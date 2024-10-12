@@ -63,9 +63,9 @@ rollName.innerText = currentRoll.name;
 rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
-//pulling selections
-let glazingPrice;
-let packPrice;
+//pulling selections & setting default values
+let glazingPrice = glazingOptions[0].priceAdaptation;
+let packPrice = packSizeOptions[0].multiplier;;
 
 window.onload = function selectOption() {
     
@@ -88,8 +88,8 @@ window.onload = function selectOption() {
 
 //updating price
 function updatePrice() {   
-    let totalPrice = ((currentRoll.basePrice + glazingPrice) * packPrice).toFixed(2);
-    rollPrice.innerText = "$" + totalPrice;
+    let totalPrice = ((currentRoll.basePrice + glazingPrice) * packPrice);
+    rollPrice.innerText = "$" + totalPrice.toFixed(2);
 }
 
 //reflecting new prices as selections change
