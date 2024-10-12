@@ -16,7 +16,7 @@ hr {
     border: 2px solid black;
 }
 
-#cart, #prod, #cart2, #prod2 {
+#cart, #prod, #cart2, #prod2, #top1 {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     float: right;
