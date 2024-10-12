@@ -59,7 +59,7 @@ const rollImage = document.querySelector('#original2');
 const selectGlaze = document.querySelector('#glazing');
 const selectPack = document.querySelector('#pack');
 
-rollName.innerText = currentRoll.name;
+rollName.innerText = currentRoll.type;
 rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
@@ -118,6 +118,6 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
-    const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
+    const newRoll = new Roll(currentRoll. type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
     cart.push(newRoll);
 }
