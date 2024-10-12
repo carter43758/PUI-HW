@@ -60,12 +60,12 @@ rollText.innerText = currentRoll.name;
 rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
+//pulling selections
 let glazingPrice; 
 let packSize;
 let selectGlaze;
 let selectPack;
 
-//pulling selections
 window.onload = function selectOption() {
     const selectGlaze = document.querySelector('#glazing');
     const selectPack = document.querySelector('#pack');
@@ -95,22 +95,19 @@ function updatePrice() {
     newPrice.innerText = "$" + price;
 }
 
-//reflecting new price
+//reflecting new prices as selections change
 function glazingChange(selectGlaze) {
     glazingPrice = glazingOptions.find(glaze => glaze.name === selectGlaze.value).priceAdaptation;
     updatePrice();
 }
 
-//got this from Office Hours
 function packChange(selectPack) {
     packSize = packSizeOptions.find(pack => pack.name === selectPack.value).multiplier;
     updatePrice();
 }
 
-const cartButton = document.querySelector('#add');
-cartButton.addEventListener('click', () => { addToCart() });
 
-//initializing cart function, calling cart + Roll class
+//adding to Cart
 let cart = [];
 
 class Roll {
@@ -122,6 +119,9 @@ class Roll {
         this.element = null;
     }
 }
+
+const cartButton = document.querySelector('#add');
+cartButton.addEventListener('click', () => { addToCart() });
 
 function addToCart(currentRoll) {
     const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.price)
