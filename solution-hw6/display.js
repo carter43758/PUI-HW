@@ -90,9 +90,9 @@ window.onload = function selectOption() {
 
 //updating price
 function updatePrice() {   
-    let price = ((currentRoll.basePrice + glazingPrice) * packSize).toFixed(2);
+    let totalPrice = ((currentRoll.basePrice + glazingPrice) * packSize).toFixed(2);
     let newPrice =  document.querySelector('#price');
-    newPrice.innerText = "$" + price;
+    newPrice.innerText = "$" + totalPrice;
 }
 
 //reflecting new prices as selections change
@@ -123,7 +123,7 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
-    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, basePrice);
+    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, totalPrice.value);
     cart.push(newRoll);
     saveToLocalStorage();
     return cart;
