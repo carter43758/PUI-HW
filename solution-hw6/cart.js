@@ -12,7 +12,7 @@ class Roll {
 }
 
 const cartButton = document.querySelector('#add');
-cartButton.addEventListener('click', addToCart(currentRoll));
+cartButton.addEventListener('click', function () => addToCart(currentRoll));
 
 function addToCart(currentRoll) {
     const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
@@ -100,12 +100,10 @@ function updatePrice() {
 function removeItems(newRoll) {
     newRoll.element.remove();
 
-    cart.delete(newRoll);
-    
-    // const index = cart.indexOf(newRoll); // Find the index of the roll in the cart
-    // if (index > -1) {
-    //     cart.splice(index, 1); // Remove the roll from the array
-    // }
+    const index = cart.indexOf(newRoll); // Find the index of the roll in the cart
+    if (index > -1) {
+        cart.splice(index, 1); // Remove the roll from the array
+    }
 
     updatePrice();
     saveToLocalStorage();

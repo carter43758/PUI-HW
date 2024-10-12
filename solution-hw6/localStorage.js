@@ -1,8 +1,6 @@
 //HW6
 function saveToLocalStorage() {
-    const rollArray = Array.from(cart);
-    const rollArrayString = JSON.stringify(rollArray);
-
+    const rollArrayString = JSON.stringify(cart);
     localStorage.setItem('storedItems', rollArrayString);
     console.log(cart);
 }
@@ -14,5 +12,4 @@ if (localStorage.getItem('storedItems') != null) {
 function retrieveFromLocalStorage() {
     const rollArrayString = localStorage.getItem('storedItems');
     const rollArray = JSON.parse(rollArrayString);
-    cart = new Array(rollArray);
-}
+    cart = rollArray;
