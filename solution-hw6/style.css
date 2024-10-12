@@ -92,9 +92,13 @@ a:link, a:visited{
     margin-top: 8%;
 }
 
-.text p{
+.text p, #top1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+#top1 {
+    margin-left: 400px;
 }
 
 .desc p {
