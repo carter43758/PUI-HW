@@ -123,7 +123,7 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
-    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, rollPrice);
+    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, price);
     cart.push(newRoll);
     saveToLocalStorage();
     return cart;
