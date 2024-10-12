@@ -65,6 +65,7 @@ rollImage.src = '../assets/products/' + currentRoll.imageFile;
 let selectGlaze;
 let selectPack;
 let packSize;
+let glazingPrice;
 
 window.onload = function selectOption() {
     selectGlaze = document.querySelector('#glazing');
@@ -72,7 +73,7 @@ window.onload = function selectOption() {
     
     for (i = 0; i < glazingOptions.length; i++)
     {
-        const glazingPrice = glazingOptions[i];
+        glazingPrice = glazingOptions[i];
         const option = document.createElement('option');
         option.textContent = glazingPrice.name;
         selectGlaze.appendChild(option);
@@ -80,7 +81,7 @@ window.onload = function selectOption() {
     
     for (i = 0; i < packSizeOptions.length; i++)
     {
-        const packSize = packSizeOptions[i];
+        packSize = packSizeOptions[i];
         const option = document.createElement('option');
         option.textContent = packSize.name;
         selectPack.appendChild(option);
