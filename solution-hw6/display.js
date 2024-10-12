@@ -56,8 +56,8 @@ let currentRoll = rolls[rollType];
 const rollName = document.querySelector('#top1');    
 const rollPrice = document.querySelector('#price');
 const rollImage = document.querySelector('#original2');
-const rollGlaze = document.querySelector('#glazing');
-const packSize = document.querySelector('#pack');
+const selectGlaze = document.querySelector('#glazing');
+const selectPack = document.querySelector('#pack');
 
 rollName.innerText = currentRoll.name;
 rollPrice.innerText = currentRoll.basePrice;
