@@ -122,7 +122,7 @@ cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 function addToCart(currentRoll) {
     const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice);
     cart.push(newRoll);
-    return cart;
+    saveToLocalStorage();
 }
 
 function saveToLocalStorage() {
@@ -137,5 +137,5 @@ if (localStorage.getItem('storedItems') != null) {
 function retrieveFromLocalStorage() {
     const rollArrayString = localStorage.getItem('storedItems');
     const rollArray = JSON.parse(rollArrayString);
-    let cart = rollArray;
+    cart = rollArray;
 }
