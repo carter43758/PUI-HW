@@ -19,11 +19,13 @@ function createItem(newRoll) {
 
 //initiating for loop - from here https://stackoverflow.com/questions/3842614/how-do-i-call-a-javascript-function-on-page-load
 window.onload = function () {
-    let cart = [];
+    let cart = retrieveFromLocalStorage();
     
     for (const newRoll of cart) {
         createItem(newRoll);
     }
+
+    updatePrice();
 }
 
 function updateItems(newRoll) {
