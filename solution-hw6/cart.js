@@ -1,4 +1,6 @@
 //storage
+let cart = [];
+
 function retrieveFromLocalStorage() {
     const rollArrayString = localStorage.getItem('storedItems');
     const rollArray = JSON.parse(rollArrayString);
