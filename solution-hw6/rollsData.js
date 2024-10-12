@@ -1,4 +1,3 @@
-//https://www.geeksforgeeks.org/how-to-access-and-process-nested-objects-arrays-or-json/
 const rolls = {
     "Original": {
         name: "Original Cinnamon Roll",
