@@ -1,3 +1,5 @@
+let cart = [];
+
 //reflecting new cart with roll info
 function createItem(newRoll) {
     const template = document.querySelector('.originals3');
