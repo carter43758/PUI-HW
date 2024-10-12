@@ -81,7 +81,7 @@ window.onload = function selectOption() {
     {
         packPrice = packSizeOptions[i];
         const option = document.createElement('option');
-        option.textContent = packPrice.value;
+        option.textContent = packPrice.name;
         selectPack.appendChild(option);
     }
 }
