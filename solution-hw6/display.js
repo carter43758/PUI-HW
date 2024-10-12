@@ -31,22 +31,6 @@ const rolls = {
     }    
 };
 
-//getting current roll
-//From Lab 4 + https://stackoverflow.com/questions/17567925/how-to-check-for-specific-string-in-a-dictionary
-let queryString = window.location.search;
-let params = new URLSearchParams(queryString);
-let rollType = params.get('roll');
-let currentRoll = rolls[rollType];
-
-//updating text, price, & image
-const rollText = document.querySelector('#top1');    
-const rollPrice = document.querySelector('#price');
-const rollImage = document.querySelector('#original2');
-
-rollText.innerText = currentRoll.name;
-rollPrice.innerText = currentRoll.basePrice;
-rollImage.src = '../assets/products/' + currentRoll.imageFile;
-
 const glazingOptions = [
     {name: "Keep Original", priceAdaptation: 0.00},
     {name: "Sugar Milk", priceAdaptation: 0.00},
@@ -60,6 +44,21 @@ const packSizeOptions = [
     {name: "6", multiplier: 5},
     {name: "12", multiplier: 10}
 ];
+
+//getting current roll
+let queryString = window.location.search;
+let params = new URLSearchParams(queryString);
+let rollType = params.get('roll');
+let currentRoll = rolls[rollType];
+
+//updating text, price, & image
+const rollText = document.querySelector('#top1');    
+const rollPrice = document.querySelector('#price');
+const rollImage = document.querySelector('#original2');
+
+rollText.innerText = currentRoll.name;
+rollPrice.innerText = currentRoll.basePrice;
+rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
 let glazingPrice; 
 let packSize;
@@ -90,13 +89,11 @@ window.onload = function selectOption() {
 
 //updating price
 function updatePrice() {   
-    const basePrice = 2.49;
-    let price = ((basePrice + glazingPrice) * packSize).toFixed(2);
+    // const basePrice = 2.49;
+    let price = ((currentRoll.basePrice + glazingPrice) * packSize).toFixed(2);
     let newPrice =  document.querySelector('#price');
     newPrice.innerText = "$" + price;
 }
-
-//https://stackoverflow.com/questions/45522616/how-to-use-indexof-with-filter-in-javascript
 
 //reflecting new price
 function glazingChange(selectGlaze) {
