@@ -56,7 +56,7 @@ let currentRoll = rolls[rollType];
 const rollName = document.querySelector('#top1');    
 const rollPrice = document.querySelector('#price');
 const rollImage = document.querySelector('#original2');
-const rollGlazing = document.querySelector('#glazing');
+const rollGlaze = document.querySelector('#glazing');
 const packSize = document.querySelector('#pack');
 
 rollName.innerText = currentRoll.name;
@@ -74,15 +74,15 @@ window.onload = function selectOption() {
         glazingPrice = glazingOptions[i];
         const option = document.createElement('option');
         option.textContent = glazingPrice.name;
-        selectGlaze.appendChild(option);
+        rollGlaze.appendChild(option);
     }
     
     for (i = 0; i < packSizeOptions.length; i++)
     {
-        packSize = packSizeOptions[i];
+        packPrice = packSizeOptions[i];
         const option = document.createElement('option');
         option.textContent = packSize.name;
-        selectPack.appendChild(option);
+        packSize.appendChild(option);
     }
 }
 
@@ -120,7 +120,7 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
-    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, rollPrice.value);
+    const newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, updatePrice(currentRoll));
     cart.push(newRoll);
     saveToLocalStorage();
     return cart;
