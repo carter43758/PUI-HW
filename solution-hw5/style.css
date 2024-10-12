@@ -98,6 +98,9 @@ a:link, a:visited{
     font-size: 20px;
 }
 
+#top1 {
+    margin-left: 400px;
+}
 .desc p {
     margin: 0%;
 }
