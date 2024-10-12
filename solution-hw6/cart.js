@@ -12,9 +12,7 @@ class Roll {
 }
 
 const cartButton = document.querySelector('#add');
-cartButton.addEventListener('click', function () {
-    addToCart(currentRoll);
-});
+cartButton.addEventListener('click', addtoCart);
 
 function addToCart(currentRoll) {
     const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
