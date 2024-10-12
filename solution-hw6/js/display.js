@@ -12,10 +12,10 @@ const packSizeOptions = [
     {name: "12", multiplier: 10}
 ];
 
-let glazingPrice = 0; 
-let packSize = 0;
-let selectGlaze = 0;
-let selectPack = 0;
+let glazingPrice; 
+let packSize;
+let selectGlaze;
+let selectPack;
 
 //pulling selections
 window.onload = function selectOption() {
