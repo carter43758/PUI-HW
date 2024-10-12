@@ -25,13 +25,13 @@
           <p> your liking! </p>
       </div>
       <p class = "glaze"> Glazing: </p>
-      <select id = "glazing" onchange="updatePrice()">
+      <select id = "glazing" onchange="glazingChange(this)">
       </select>
       <p class = "size"> Pack size: </p>
-      <select id = "pack" onchange="updatePrice()">
+      <select id = "pack" onchange="packChange(this)">
       </select>
       <div class = "last">
-        <p id = "price"> </p>
+        <p id = "price"> $2.49 </p>
         <p id = "add" onclick="addToCart()"> Add to Cart </p> 
       </div>
       <!--span allows me to set individual spacing, coloring, & size for each button-->
