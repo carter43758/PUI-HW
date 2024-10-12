@@ -74,7 +74,7 @@ window.onload = function selectOption() {
         glazingPrice = glazingOptions[i];
         const option = document.createElement('option');
         option.textContent = glazingPrice.name;
-        rollGlaze.appendChild(option);
+        selectGlaze.appendChild(option);
     }
     
     for (i = 0; i < packSizeOptions.length; i++)
@@ -82,7 +82,7 @@ window.onload = function selectOption() {
         packPrice = packSizeOptions[i];
         const option = document.createElement('option');
         option.textContent = packPrice.value;
-        packSize.appendChild(option);
+        selectPack.appendChild(option);
     }
 }
 
