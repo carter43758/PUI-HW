@@ -142,5 +142,5 @@ if (localStorage.getItem('storedItems') != null) {
 function retrieveFromLocalStorage() {
     const rollArrayString = localStorage.getItem('storedItems');
     const rollArray = JSON.parse(rollArrayString);
-    let cart = rollArray;
+    cart = rollArray;
 }
