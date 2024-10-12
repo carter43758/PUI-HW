@@ -64,6 +64,7 @@ rollImage.src = '../assets/products/' + currentRoll.imageFile;
 //pulling selections
 let selectGlaze;
 let selectPack;
+let packSize;
 
 window.onload = function selectOption() {
     selectGlaze = document.querySelector('#glazing');
