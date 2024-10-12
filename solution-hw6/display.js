@@ -64,14 +64,11 @@ rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
 //pulling selections
-let glazingPrice;
-let packPrice;
-
 window.onload = function selectOption() {
     
     for (i = 0; i < glazingOptions.length; i++)
     {
-        glazingPrice = glazingOptions[i];
+        let glazingPrice = glazingOptions[i];
         const option = document.createElement('option');
         option.textContent = glazingPrice.name;
         selectGlaze.appendChild(option);
@@ -79,7 +76,7 @@ window.onload = function selectOption() {
     
     for (i = 0; i < packSizeOptions.length; i++)
     {
-        packPrice = packSizeOptions[i];
+        let packPrice = packSizeOptions[i];
         const option = document.createElement('option');
         option.textContent = packPrice.name;
         selectPack.appendChild(option);
