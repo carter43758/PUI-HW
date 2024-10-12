@@ -11,6 +11,13 @@ class Roll {
     }
 }
 
+function addToCart(currentRoll) {
+    const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
+    cart.push(newRoll);
+    saveToLocalStorage();
+    return cart;
+}
+
 //reflecting new cart with roll info
 function createItem(newRoll) {
     const template = document.querySelector('.originals3');
