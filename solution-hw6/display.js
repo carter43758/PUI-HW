@@ -62,11 +62,9 @@ function packChange(selectPack) {
 }
 
 const cartButton = document.querySelector('#add');
-cartButton.addEventListener('click', addtoCart);
-
-function addToCart(currentRoll) {
+cartButton.addEventListener('click', function addtoCart(){
     const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
     cart.push(newRoll);
     saveToLocalStorage();
     return cart;
-}
+});
