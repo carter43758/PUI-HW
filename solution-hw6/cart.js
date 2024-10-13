@@ -64,13 +64,13 @@ function updateItems(newRoll) {
 
 function calculatePrice(newRoll) {
     for (let i = 0; i < glazingOptions.length; i++) {
-        if (selectGlaze === glazingOptions[i].name) {
+        if (selectGlaze.value === glazingOptions[i].name) {
             glazePrice = glazingOptions[i].priceAdaptation;
         }
     }
 
     for (let i = 0; i < packSizeOptions.length; i++) {
-        if (selectPack.toString() === packSizeOptions[i].name) {
+        if (selectPack.value.toString() === packSizeOptions[i].name) {
             packPrice = packSizeOptions[i].multiplier;
         }
     }
