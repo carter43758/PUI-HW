@@ -67,7 +67,7 @@ function saveToLocalStorage() {
 }
 
 function addToCart(currentRoll) {
-    let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice);
+    let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice, currentRoll.imageFile);
     cart.push(newRoll);
     saveToLocalStorage();
 }
