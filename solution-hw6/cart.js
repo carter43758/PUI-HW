@@ -26,7 +26,6 @@ window.onload = function () {
 
 //reflecting new cart with roll info
 function createItem(newRoll) {    
-    console.log(newRoll);
     const template = document.querySelector('.originals3');
     const cartTemplate = template.content.cloneNode(true);
 
@@ -60,6 +59,7 @@ function updateItems(newRoll) {
 
     cartImg.src = "../assets/products/" + rolls[newRoll.type].imageFile;
     cartImg.alt = newRoll.type + "Cinnamon Roll";
+    console.log(newRoll);
 }
 
 function calculatePrice(newRoll) {
