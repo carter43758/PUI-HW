@@ -57,4 +57,3 @@ class Roll {
 }
 
 let cart = [];
-const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
