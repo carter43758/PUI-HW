@@ -55,8 +55,8 @@ function updateItems(newRoll) {
     //copying template content over
     cartGlaze.innerText = "Glazing: " + newRoll.glazing;
     cartPack.innerText = "Pack size: " + newRoll.size;
-    cartName.innerText = newRoll.type + " Cinnamon Roll";
-    cartPrice.innerText = "$" + calculatePrice(newRoll).toFixed(2);
+    cartName.innerText = newRoll.type;
+    cartPrice.innerText = "$" + calculatePrice(newRoll);
 
     cartImg.src = "../assets/products/" + rolls[newRoll.type].imageFile;
     cartImg.alt = newRoll.type + "Cinnamon Roll";
@@ -76,7 +76,7 @@ function calculatePrice(newRoll) {
         }
     }
 
-    return ((newRoll.basePrice + glazePrice) * packPrice);
+    return ((newRoll.basePrice + glazePrice) * packPrice).toFixed(2);
 }
 
 //updating price
