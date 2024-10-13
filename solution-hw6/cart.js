@@ -1,5 +1,3 @@
-newRoll = cart[1];
-
 //storage
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
@@ -10,7 +8,7 @@ function retrieveFromLocalStorage() {
     const rollArrayString = localStorage.getItem('storedItems');
     const rollArray = JSON.parse(rollArrayString);
     cart = rollArray;
-    console.log(cart);
+    console.log(rollArray);
 }
 
 if (localStorage.getItem('storedItems') != null) {
