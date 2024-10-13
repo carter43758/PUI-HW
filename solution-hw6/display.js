@@ -88,8 +88,8 @@ window.onload = function selectOption() {
 
 //updating price
 function updatePrice() {   
-    let totalPrice = ((currentRoll.basePrice + glazingPrice) * packPrice);
-    rollPrice.innerText = "$" + totalPrice.toFixed(2);
+    let newPrice = ((currentRoll.basePrice + glazingPrice) * packPrice);
+    rollPrice.innerText = "$" + newPrice.toFixed(2);
 }
 
 //reflecting new prices as selections change

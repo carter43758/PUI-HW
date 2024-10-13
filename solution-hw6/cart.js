@@ -82,14 +82,14 @@ function calculatePrice(newRoll) {
 //updating price
 function updatePrice() {
     let totalPrice = 0;
-    const newPrice = document.querySelector('#price3');
     
     for (const newRoll of cart)
     {
         totalPrice += calculatePrice(newRoll);
     }
 
-    newPrice.innerText = "$" + totalPrice.toFixed(2);
+    const priceTotal = document.querySelector('#price3');
+    priceTotal.innerText = "$" + totalPrice.toFixed(2);
 }
 
 //function to remove from cart on click (coded in HTML)
