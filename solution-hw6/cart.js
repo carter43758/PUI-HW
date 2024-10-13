@@ -1,4 +1,4 @@
-let cart = new Array;
+newRoll = cart[1];
 
 //storage
 function saveToLocalStorage() {
