@@ -32,6 +32,10 @@ function createItem(newRoll) {
 
     newRoll.element = cartTemplate.querySelector('.roll-element'); // Assigning to the root item element
 
+    //adding remove button so it's clickable (coded in HTML)
+    const cartRemove = cartTemplate.querySelector('#remove');
+    cartRemove.addEventListener('click', () => { removeItems(newRoll) });
+
     //adding notecard as child to parent and updating with element & price
     const cartItems = document.querySelector('.items');
     cartItems.appendChild(cartTemplate);
