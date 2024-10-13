@@ -54,5 +54,6 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
+    let newRoll = new Roll(rollName.value, selectGlaze.value, selectPack.value, currentRoll.basePrice);
     cart.push(newRoll);
 }
