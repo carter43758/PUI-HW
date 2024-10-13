@@ -104,15 +104,6 @@ function packChange(selectPack) {
 }
 
 //adding to Cart
-class Roll {
-    constructor(rollType, rollGlazing, packSize, rollPrice) {
-        this.type = rollType;
-        this.glazing = rollGlazing;
-        this.size = packSize;
-        this.basePrice = rollPrice;
-        this.element = null;
-    }
-}
 
 const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
