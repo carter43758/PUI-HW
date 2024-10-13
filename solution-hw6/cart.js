@@ -1,4 +1,3 @@
-
 //storage
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
@@ -43,7 +42,6 @@ function createItem(newRoll) {
 
     updateItems(newRoll);
     updatePrice();
-    saveToLocalStorage();
 }
 
 function updateItems(newRoll) {
