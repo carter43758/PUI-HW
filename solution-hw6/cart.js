@@ -1,4 +1,4 @@
-let cart;
+let cart = new Array;
 
 //storage
 function saveToLocalStorage() {
