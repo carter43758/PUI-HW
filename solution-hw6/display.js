@@ -3,7 +3,6 @@ let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
 let rollType = params.get('roll');
 let currentRoll = rolls[rollType];
-let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice);
 
 //PDP Data
 const rollName = document.querySelector('#top1');    
@@ -60,6 +59,7 @@ function packChange(selectPack) {
 //adding to Cart
 const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
+let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice);
 
 function addToCart(currentRoll) {
     return cart.push(newRoll);
