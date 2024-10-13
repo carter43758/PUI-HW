@@ -60,7 +60,6 @@ function updateItems(newRoll) {
 
     cartImg.src = "../assets/products/" + rolls[newRoll.type].imageFile;
     cartImg.alt = newRoll.type + "Cinnamon Roll";
-    console.log(newRoll);
 }
 
 function calculatePrice(newRoll) {
