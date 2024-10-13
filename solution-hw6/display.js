@@ -118,6 +118,6 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
-    const newRoll = new Roll(currentRoll. type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
+    const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
     cart.push(newRoll);
 }
