@@ -1,3 +1,9 @@
+let currentRoll = rolls[rollType];
+function addToCart(currentRoll) {
+    const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
+    cart.push(newRoll);
+}
+
 //storage
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
