@@ -29,6 +29,7 @@ window.onload = function () {
 
 //reflecting new cart with roll info
 function createItem(newRoll) {    
+    console.log(newRoll);
     const template = document.querySelector('.originals3');
     const cartTemplate = template.content.cloneNode(true);
 
