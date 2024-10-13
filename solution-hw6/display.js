@@ -11,7 +11,7 @@ const rollImage = document.querySelector('#original2');
 const selectGlaze = document.querySelector('#glazing');
 const selectPack = document.querySelector('#pack');
 
-rollName.innerText = currentRoll.type;
+rollName.innerText = currentRoll.name;
 rollPrice.innerText = currentRoll.basePrice;
 rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
