@@ -1,5 +1,3 @@
-
-
 //getting current roll
 let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
@@ -58,6 +56,10 @@ function packChange(selectPack) {
 }
 
 //adding to Cart
-
 const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
+
+function addToCart(currentRoll) {
+    const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
+    cart.push(newRoll);
+}
