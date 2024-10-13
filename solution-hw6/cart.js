@@ -59,7 +59,7 @@ function updateItems(newRoll) {
     cartPrice.innerText = "$" + calculatePrice(newRoll);
 
     cartImg.src = "../assets/products/" + rolls[newRoll].imageFile;
-    cartImg.alt = newRoll.type + "Cinnamon Roll";
+    cartImg.alt = newRoll.type;
 }
 
 function calculatePrice(newRoll) {
