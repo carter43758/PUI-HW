@@ -45,3 +45,13 @@ const packSizeOptions = [
     {name: "6", multiplier: 5},
     {name: "12", multiplier: 10}
 ];
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, rollPrice) {
+        this.type = rollType;
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = rollPrice;
+        this.element = null;
+    }
+}
