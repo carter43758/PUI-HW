@@ -1,4 +1,10 @@
+//adding to cart
 let cart = [];
+
+function addToCart(currentRoll) {
+    const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
+    cart.push(newRoll);
+}
 
 //storage
 function saveToLocalStorage() {
