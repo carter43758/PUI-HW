@@ -63,3 +63,4 @@ let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
 let rollType = params.get('roll');
 let currentRoll = rolls[rollType];
+let newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
