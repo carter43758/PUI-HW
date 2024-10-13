@@ -1,4 +1,3 @@
-
 //getting current roll
 let queryString = window.location.search;
 let params = new URLSearchParams(queryString);

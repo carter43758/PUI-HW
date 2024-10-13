@@ -1,5 +1,3 @@
-// let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice);
-
 //storage
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
