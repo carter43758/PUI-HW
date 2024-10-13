@@ -8,6 +8,7 @@ function retrieveFromLocalStorage() {
     const rollArrayString = localStorage.getItem('storedItems');
     const rollArray = JSON.parse(rollArrayString);
     cart = rollArray;
+    console.log(cart);
 }
 
 if (localStorage.getItem('storedItems') != null) {
