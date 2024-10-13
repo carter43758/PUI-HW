@@ -52,7 +52,7 @@ class Roll {
         this.glazing = selectGlaze;
         this.size = selectPack;
         this.basePrice = rollPrice;
-        this.element = null;
         this.imageFile = imageFile;
+        this.element = null;
     }
 }
