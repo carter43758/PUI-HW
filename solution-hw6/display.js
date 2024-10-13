@@ -1,8 +1,8 @@
 //getting current roll
-let queryString = window.location.search;
-let params = new URLSearchParams(queryString);
-let rollType = params.get('roll');
-let currentRoll = rolls[rollType];
+// let queryString = window.location.search;
+// let params = new URLSearchParams(queryString);
+// let rollType = params.get('roll');
+// let currentRoll = rolls[rollType];
 
 //PDP Data
 const rollName = document.querySelector('#top1');    
