@@ -1,6 +1,5 @@
 //adding to cart
 let cart = [];
-const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
 
 class Roll {
     constructor(rollType, rollGlazing, packSize, rollPrice) {
@@ -12,6 +11,7 @@ class Roll {
     }
 }
 
+const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
 
 //storage
 function saveToLocalStorage() {
