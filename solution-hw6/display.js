@@ -1,9 +1,3 @@
-//getting current roll
-let queryString = window.location.search;
-let params = new URLSearchParams(queryString);
-let rollType = params.get('roll');
-let currentRoll = rolls[rollType];
-
 //updating text, price, & image
 const rollName = document.querySelector('#top1');    
 const rollPrice = document.querySelector('#price');

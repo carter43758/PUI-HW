@@ -57,3 +57,9 @@ class Roll {
 }
 
 let cart = [];
+
+//getting current roll
+let queryString = window.location.search;
+let params = new URLSearchParams(queryString);
+let rollType = params.get('roll');
+let currentRoll = rolls[rollType];

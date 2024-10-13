@@ -1,4 +1,3 @@
-let currentRoll = rolls[rollType];
 function addToCart(currentRoll) {
     const newRoll = new Roll(currentRoll.type, currentRoll.glazing, currentRoll.size, currentRoll.basePrice);
     cart.push(newRoll);
