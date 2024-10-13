@@ -57,16 +57,3 @@ class Roll {
 }
 
 let cart = [];
-
-//getting current roll
-let queryString = window.location.search;
-let params = new URLSearchParams(queryString);
-let rollType = params.get('roll');
-let currentRoll = rolls[rollType];
-
-//PDP Data
-const rollName = document.querySelector('#top1');    
-const rollPrice = document.querySelector('#price');
-const rollImage = document.querySelector('#original2');
-const selectGlaze = document.querySelector('#glazing');
-const selectPack = document.querySelector('#pack');
