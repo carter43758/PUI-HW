@@ -1,8 +1,9 @@
 //getting current roll
-// let queryString = window.location.search;
-// let params = new URLSearchParams(queryString);
-// let rollType = params.get('roll');
-// let currentRoll = rolls[rollType];
+let queryString = window.location.search;
+let params = new URLSearchParams(queryString);
+let rollType = params.get('roll');
+let currentRoll = rolls[rollType];
+let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice);
 
 //PDP Data
 const rollName = document.querySelector('#top1');    
@@ -61,5 +62,5 @@ const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
 
 function addToCart(currentRoll) {
-    cart.push(new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice));
+    return cart.push(newRoll);
 }

@@ -57,10 +57,3 @@ class Roll {
 }
 
 let cart = [];
-
-//current + new roll variables
-let queryString = window.location.search;
-let params = new URLSearchParams(queryString);
-let rollType = params.get('roll');
-let currentRoll = rolls[rollType];
-let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice);
