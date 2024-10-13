@@ -55,5 +55,3 @@ class Roll {
         this.element = null;
     }
 }
-
-let cart = [];
