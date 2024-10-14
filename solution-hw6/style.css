@@ -161,7 +161,7 @@ select {
 }
 
 #checkout {
-    float: right;
+    /* float: right; */
     border: 2px black solid;
     padding: 10px;
     padding-left: 30px;
