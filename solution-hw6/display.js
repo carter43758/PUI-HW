@@ -1,5 +1,21 @@
 let cart = [];
 
+ //getting current roll
+ let queryString = window.location.search;
+ let params = new URLSearchParams(queryString);
+ let rollType = params.get('roll');
+ let currentRoll = rolls[rollType];
+
+ //PDP Data
+ const rollName = document.querySelector('#top1');    
+ const rollPrice = document.querySelector('#price');
+ const rollImage = document.querySelector('#original2');
+
+ //updating text, price, & image
+ rollName.innerText = currentRoll.name;
+ rollPrice.innerText = currentRoll.basePrice;
+ rollImage.src = '../assets/products/' + currentRoll.imageFile;
+ 
 //updating glaze & pack prices on change
 const selectGlaze = document.querySelector('#glazing');
 const selectPack = document.querySelector('#pack');
@@ -22,6 +38,12 @@ function updatePrice() {
     rollPrice.innerText = "$" + newPrice.toFixed(2);
 }
 
+
+function saveToLocalStorage() {
+    const rollArrayString = JSON.stringify(cart);
+    localStorage.setItem('storedItems', rollArrayString);
+}
+
 window.onload = function selectOption() {
     
     for (i = 0; i < glazingOptions.length; i++)
@@ -40,24 +62,6 @@ window.onload = function selectOption() {
         selectPack.appendChild(option);
     }
 
-    //getting current roll
-    let queryString = window.location.search;
-    let params = new URLSearchParams(queryString);
-    let rollType = params.get('roll');
-    let currentRoll = rolls[rollType];
-
-    //PDP Data
-    const rollName = document.querySelector('#top1');    
-    const rollPrice = document.querySelector('#price');
-    const rollImage = document.querySelector('#original2');
-
-    //updating text, price, & image
-    rollName.innerText = currentRoll.name;
-    rollPrice.innerText = currentRoll.basePrice;
-    rollImage.src = '../assets/products/' + currentRoll.imageFile;
-
-   
-    
     //adding to cart]
     const cartButton = document.querySelector('#add');
     cartButton.addEventListener('click', () => { addToCart(currentRoll) });
@@ -67,10 +71,5 @@ window.onload = function selectOption() {
         cart.push(newRoll);
         saveToLocalStorage();
     }
-}
-
-function saveToLocalStorage() {
-    const rollArrayString = JSON.stringify(cart);
-    localStorage.setItem('storedItems', rollArrayString);
 }
 
