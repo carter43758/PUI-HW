@@ -80,10 +80,9 @@ function calculatePrice(newRoll) {
 
 //updating price
 function updatePrice() {
-    let totalPrice = 1;
-    
     for (const newRoll of cart)
     {
+        let totalPrice = 0;
         totalPrice += calculatePrice(newRoll);
     }
 
