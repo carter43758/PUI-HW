@@ -153,12 +153,6 @@ select {
     margin-top: 4%;
 }
 
-/* .originals3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
-
 #checkout {
     float: right;
     border: 2px black solid;
@@ -185,16 +179,13 @@ select {
 }
 
 .total {
-    margin-left: 400px;
+    margin-left: 450px;
     font-size:  30px;
 }
 
 .options p {
     margin: 0%;
     font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-/* .roll-element {
-    margin-left: 400px;
-} */
-
