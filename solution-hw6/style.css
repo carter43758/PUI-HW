@@ -190,6 +190,10 @@ select {
     font-size:  30px;
 }
 
+.roll-element{
+    margin-left: 400px;
+}
+
 .options p {
     margin: 0%;
     font-size: 25px;
