@@ -19,6 +19,7 @@ if (localStorage.getItem('storedItems') != null) {
 window.onload = function () {   
     
     for (const newRoll of cart) {
+        retrieveFromLocalStorage();
         createItem(newRoll);
     }
     
@@ -80,14 +81,15 @@ function calculatePrice(newRoll) {
 
 //updating price
 function updatePrice() {
+    let totalPrice = 0;
+    
     for (const newRoll of cart)
     {
-        let totalPrice = 0;
         totalPrice += calculatePrice(newRoll);
     }
 
     const priceTotal = document.querySelector('#price3');
-    priceTotal.innerText = "$" + totalPrice;
+    priceTotal.textContent = "$" + totalPrice;
 }
 
 //function to remove from cart on click (coded in HTML)
