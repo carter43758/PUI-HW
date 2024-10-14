@@ -1,3 +1,5 @@
+let totalPrice = 0;
+
 //storage
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
@@ -22,7 +24,7 @@ window.onload = function () {
         createItem(newRoll);
     }
     
-    updatePrice();
+    // updatePrice();
 }
 
 //reflecting new cart with roll info
@@ -80,7 +82,6 @@ function calculatePrice(newRoll) {
 
 //updating price
 function updatePrice() {
-    let totalPrice = 0;
     
     for (const newRoll of cart)
     {
