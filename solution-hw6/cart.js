@@ -19,7 +19,6 @@ window.onload = function () {
     
     for (const newRoll of cart) {
         createItem(newRoll);
-        console.log(newRoll);
     }
 
     updatePrice();
@@ -75,12 +74,12 @@ function calculatePrice(newRoll) {
         }
     }
 
-    return ((newRoll.basePrice + glazePrice) * packPrice).toFixed(2);
+    return ((newRoll.basePrice + glazePrice) * packPrice);
 }
 
 //updating price
 function updatePrice() {
-    let totalPrice = 0;
+    let totalPrice;
     
     for (const newRoll of cart)
     {
