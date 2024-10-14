@@ -2,6 +2,7 @@
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
     localStorage.setItem('storedItems', rollArrayString);
+    console.log(cart);
 }
 
 function retrieveFromLocalStorage() {
