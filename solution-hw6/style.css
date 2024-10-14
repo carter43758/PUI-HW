@@ -200,4 +200,5 @@ select {
 .options p {
     margin: 0%;
     font-size: 25px;
+    padding-left: 30px;
 }
