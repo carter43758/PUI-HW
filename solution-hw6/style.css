@@ -197,3 +197,7 @@ select {
     margin: 0%;
     font-size: 25px;
 }
+
+.roll-element {
+    margin-left: 400px;
+}
