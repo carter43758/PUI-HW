@@ -87,7 +87,7 @@ function updatePrice() {
     }
 
     const priceTotal = document.querySelector('#price3');
-    priceTotal.innerText = "$" + totalPrice.toFixed(2);
+    priceTotal.innerText = "$" + totalPrice;
 }
 
 //function to remove from cart on click (coded in HTML)
