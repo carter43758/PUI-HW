@@ -1,3 +1,25 @@
+let cart = [];
+
+//updating glaze & pack prices on change
+let glazingPrice = glazingOptions[0].priceAdaptation;
+let packPrice = packSizeOptions[0].multiplier;
+
+ function glazingChange(selectGlaze) {
+    glazingPrice = glazingOptions.find(glaze => glaze.name === selectGlaze.value).priceAdaptation;
+    updatePrice();
+}
+
+function packChange(selectPack) {
+    packPrice = packSizeOptions.find(pack => pack.name === selectPack.value).multiplier;
+    updatePrice();
+}
+
+//updating price
+function updatePrice() {   
+    let newPrice = ((currentRoll.basePrice + glazingPrice) * packPrice);
+    rollPrice.innerText = "$" + newPrice.toFixed(2);
+}
+
 window.onload = function selectOption() {
     
     for (i = 0; i < glazingOptions.length; i++)
@@ -34,40 +56,21 @@ window.onload = function selectOption() {
     rollPrice.innerText = currentRoll.basePrice;
     rollImage.src = '../assets/products/' + currentRoll.imageFile;
 
+   
+    
+    //adding to cart]
+    const cartButton = document.querySelector('#add');
+    cartButton.addEventListener('click', () => { addToCart(currentRoll) });
+    
+    function addToCart(currentRoll) {
+        let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice, currentRoll.imageFile);
+        cart.push(newRoll);
+        saveToLocalStorage();
+    }
 }
-
-//updating price
-let glazingPrice = glazingOptions[0].priceAdaptation;
-let packPrice = packSizeOptions[0].multiplier;;
-
-function updatePrice() {   
-    let newPrice = ((currentRoll.basePrice + glazingPrice) * packPrice);
-    rollPrice.innerText = "$" + newPrice.toFixed(2);
-}
-
-//reflecting new prices as selections change
-function glazingChange(selectGlaze) {
-    glazingPrice = glazingOptions.find(glaze => glaze.name === selectGlaze.value).priceAdaptation;
-    updatePrice();
-}
-
-function packChange(selectPack) {
-    packPrice = packSizeOptions.find(pack => pack.name === selectPack.value).multiplier;
-    updatePrice();
-}
-
-//adding to Cart
-const cartButton = document.querySelector('#add');
-cartButton.addEventListener('click', () => { addToCart(currentRoll) });
-let cart = [];
 
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
     localStorage.setItem('storedItems', rollArrayString);
 }
 
-function addToCart(currentRoll) {
-    let newRoll = new Roll(currentRoll.name, selectGlaze.value, selectPack.value, currentRoll.basePrice, currentRoll.imageFile);
-    cart.push(newRoll);
-    saveToLocalStorage();
-}

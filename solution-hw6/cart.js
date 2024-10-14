@@ -21,7 +21,7 @@ window.onload = function () {
     for (const newRoll of cart) {
         createItem(newRoll);
     }
-
+    
     updatePrice();
 }
 
