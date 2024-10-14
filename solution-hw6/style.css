@@ -207,6 +207,8 @@ select {
     padding-top: 30px;
 }
 
-#remove{
-    
-}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
