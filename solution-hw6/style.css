@@ -161,7 +161,7 @@ select {
 }
 
 #checkout {
-    /* float: right; */
+    float: right;
     border: 2px black solid;
     padding: 10px;
     padding-left: 30px;
@@ -186,12 +186,12 @@ select {
 }
 
 .total {
-    margin-left: 430px;
+    margin-left: 420px;
     font-size:  30px;
 }
 
 .roll-element{
-    margin-left: 430px;
+    margin-left: 420px;
 }
 
 .options p {
