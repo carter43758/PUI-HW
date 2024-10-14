@@ -202,3 +202,7 @@ select {
     font-size: 25px;
     padding-left: 30px;
 }
+
+.options {
+    padding-top: 30px;
+}
