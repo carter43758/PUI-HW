@@ -19,7 +19,6 @@ if (localStorage.getItem('storedItems') != null) {
 window.onload = function () {   
     
     for (const newRoll of cart) {
-        retrieveFromLocalStorage();
         createItem(newRoll);
     }
     
