@@ -47,12 +47,12 @@ const packSizeOptions = [
 ];
 
 class Roll {
-    constructor(rollType, selectGlaze, selectPack, rollPrice, rollImage) {
+    constructor(rollType, selectGlaze, selectPack, rollPrice, imageFile) {
         this.type = rollType;
         this.glazing = selectGlaze;
         this.size = selectPack;
         this.basePrice = rollPrice;
-        this.imageFile = rollImage;
+        this.imageFile = imageFile;
         this.element = null;
     }
 }
