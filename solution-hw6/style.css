@@ -180,7 +180,6 @@ select {
 
 #price2 {
     float: right;
-    padding-left: 200px;
 }
 
 #price3 {
@@ -201,3 +200,4 @@ select {
 .roll-element {
     margin-left: 400px;
 }
+
