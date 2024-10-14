@@ -194,9 +194,8 @@ select {
     margin-left: 420px;
 }
 
-.options p {
+.options {
     margin: 0%;
     font-size: 25px;
-    display: flex;
-    flex-wrap: wrap;
+    float: right;
 }
