@@ -74,7 +74,7 @@ function calculatePrice(newRoll) {
         }
     }
 
-    return ((newRoll.basePrice + glazePrice) * packPrice);
+    return ((newRoll.basePrice + glazePrice) * packPrice).toFixed(2);
 }
 
 //updating price
@@ -87,7 +87,7 @@ function updatePrice() {
     }
 
     const priceTotal = document.querySelector('#price3');
-    priceTotal.innerText = "$" + totalPrice;
+    priceTotal.innerText = "$" + totalPrice.toFixed(2);
 }
 
 //function to remove from cart on click (coded in HTML)
