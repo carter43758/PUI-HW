@@ -194,6 +194,7 @@ select {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     margin-left: 420px;
 }
 
@@ -203,12 +204,13 @@ select {
     padding-left: 30px;
 }
 
-.options {
-    padding-top: 30px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+ }
+
+ #remove{
+    width: 50px;
  }
