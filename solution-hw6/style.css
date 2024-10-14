@@ -191,6 +191,9 @@ select {
 }
 
 .roll-element{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-left: 420px;
 }
 
