@@ -23,6 +23,13 @@ hr {
     font-size: 20px;
 }
 
+
+.originals3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #prod {
     font-weight: bold;
     background-color: yellow;
