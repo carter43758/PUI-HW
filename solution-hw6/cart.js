@@ -1,5 +1,3 @@
-let totalPrice = 0;
-
 //storage
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
@@ -19,12 +17,10 @@ if (localStorage.getItem('storedItems') != null) {
 
 //initiating for loop - from here https://stackoverflow.com/questions/3842614/how-do-i-call-a-javascript-function-on-page-load
 window.onload = function () {
-
     for (const newRoll of cart) {
         createItem(newRoll);
+        console.log(cart);
     }
-
-    // updatePrice();
 }
 
 //reflecting new cart with roll info
@@ -82,13 +78,14 @@ function calculatePrice(newRoll) {
 
 //updating price
 function updatePrice() {
+    let totalPrice = 0;
 
     for (const newRoll of cart) {
         totalPrice += calculatePrice(newRoll);
     }
 
     const priceTotal = document.querySelector('#price3');
-    priceTotal.textContent = "$" + totalPrice;
+    priceTotal.innerText = "$" + parseFloat(totalPrice);
 }
 
 //function to remove from cart on click (coded in HTML)
