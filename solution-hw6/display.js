@@ -59,7 +59,7 @@ function packChange(selectPack) {
 //adding to Cart
 const cartButton = document.querySelector('#add');
 cartButton.addEventListener('click', () => { addToCart(currentRoll) });
-let cart = [];
+let cart = new Array;
 
 function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
