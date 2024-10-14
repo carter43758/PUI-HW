@@ -1,6 +1,8 @@
 let cart = [];
 
 //updating glaze & pack prices on change
+const selectGlaze = document.querySelector('#glazing');
+const selectPack = document.querySelector('#pack');
 let glazingPrice = glazingOptions[0].priceAdaptation;
 let packPrice = packSizeOptions[0].multiplier;
 
@@ -48,8 +50,6 @@ window.onload = function selectOption() {
     const rollName = document.querySelector('#top1');    
     const rollPrice = document.querySelector('#price');
     const rollImage = document.querySelector('#original2');
-    const selectGlaze = document.querySelector('#glazing');
-    const selectPack = document.querySelector('#pack');
 
     //updating text, price, & image
     rollName.innerText = currentRoll.name;
