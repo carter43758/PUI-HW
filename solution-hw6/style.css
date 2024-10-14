@@ -153,15 +153,11 @@ select {
     margin-top: 4%;
 }
 
-#remove {
-    text-decoration: underline;
-}
-
-.originals3 {
+/* .originals3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+} */
 
 #checkout {
     float: right;
