@@ -1,0 +1,250 @@
+/* What I Added */
+#new{
+  float:right;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 50px;
+  font-size: 18px;
+  font-style: bolder;
+  background-color: yellow;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 1%;
+  padding: 1%;
+  border-style: solid;
+  border-color: darkred;
+  font-size: 25px;
+}
+
+#logo {
+  float: left;
+  padding-right: 50px;
+  height: 200px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+#blue {
+  color: blue;
+  font-weight: bold;
+}
+
+#disclaimer {
+  font-style: italic;
+}
+
+#steps {
+  color: blue;
+  text-decoration: underline;
+}
+
+#red {
+  color: red;
+  font-weight: bold;
+}
+
+#logo {
+  float: left;
+  padding-right: 50px;
+  height: 200px;
+}
+
+/* Google Auto CSS */
+/* --------------------------- NEIGHBORHOOD PANEL --------------------------- */
+.neighborhood-discovery {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.neighborhood-discovery a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.neighborhood-discovery button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+.neighborhood-discovery .info {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.neighborhood-discovery .panel {
+  background: white;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  width: 20em;
+}
+
+.neighborhood-discovery .panel.no-scroll {
+  overflow-y: hidden;
+}
+
+.neighborhood-discovery .navbar {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.neighborhood-discovery .right {
+  float: right;
+}
+
+.neighborhood-discovery .travel-icon {
+  height: 1.2em;
+  margin-top: -0.08em;
+  vertical-align: top;
+}
+
+.neighborhood-discovery .map {
+  bottom: 0;
+  left: 20em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .neighborhood-discovery .panel {
+    right: 0;
+    top: 50%;
+    width: unset;
+  }
+
+  .neighborhood-discovery .map {
+    bottom: 50%;
+    left: 0;
+  }
+}
+
+/* --------------------------- PLACES PANEL --------------------------- */
+
+.neighborhood-discovery .places-panel {
+  box-shadow: 0 0 10px rgb(60 64 67 / 28%);
+  z-index: 1;
+}
+
+.neighborhood-discovery .places-panel header {
+  padding: 0.5em;
+}
+
+.neighborhood-discovery .show-more-button {
+  bottom: 0.5em;
+  display: none;
+  left: 28%;
+  line-height: 1.5em;
+  padding: 0.6em;
+  position: relative;
+  width: 44%;
+}
+
+.neighborhood-discovery .show-more-button.sticky {
+  background: white;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 10px rgb(60 64 67 / 28%);
+  position: sticky;
+  z-index: 2;
+}
+
+.neighborhood-discovery .show-more-button:disabled {
+  opacity: 0.5;
+}
+
+.neighborhood-discovery .place-results-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.neighborhood-discovery .place-result {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  display: flex;
+  padding: 0.8em;
+}
+
+.neighborhood-discovery .place-result .text {
+  flex-grow: 1;
+}
+
+.neighborhood-discovery .place-result .name {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* -------------------------- DETAILS PANEL --------------------------- */
+.neighborhood-discovery .details-panel {
+  display: none;
+  z-index: 20;
+}
+
+.neighborhood-discovery .details-panel .back-button {
+  color: #4285f4;
+  padding: 0.9em;
+}
+
+.neighborhood-discovery .details-panel .back-button .icon {
+  /* Match link color #4285f4 */
+  filter: invert(47%) sepia(71%) saturate(2372%) hue-rotate(200deg) brightness(97%) contrast(98%);
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: bottom;
+}
+
+.neighborhood-discovery .details-panel header {
+  padding: 0.9em;
+}
+
+.neighborhood-discovery .details-panel h2 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.neighborhood-discovery .details-panel .section {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0.9em;
+}
+
+.neighborhood-discovery .details-panel .contact {
+  align-items: center;
+  display: flex;
+  font-size: 0.9em;
+  margin: 0.8em 0;
+}
+
+.neighborhood-discovery .details-panel .contact .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.neighborhood-discovery .details-panel .contact .text {
+  margin-left: 1em;
+}
