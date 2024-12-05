@@ -56,7 +56,6 @@ const buildingInfo = {
 
 function populateBuildingInfo(place) {
   const building = buildingInfo[place.name];
-  console.log(building);
   floor.innerText = place.name;
 }
 
@@ -286,7 +285,7 @@ function NeighborhoodDiscovery(configuration) {
         backButtonEl.addEventListener("click", () => {
           hideElement(detailsPanelEl, prevFocusEl)
           selectedPlaceId = undefined
-          widget.updateDirections()
+          window.location.reload();
         })
         showElement(detailsPanelEl, backButtonEl)
       }
