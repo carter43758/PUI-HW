@@ -1,6 +1,7 @@
 **Considerations**
 * Tested on Chrome & Safari in public & private browsing sessions
-* Tested on Laptop L (1440 x 1065) and Tablet (768 x 993)
+* Tested on Laptop L (1440 x 1065) and iPhone 14 Max preset in Chrome
+* Also functions on iPad Pro preset in Chrome
 
 
 **WAVE SSs**
