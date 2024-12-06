@@ -127,34 +127,21 @@ const CONFIGURATION = {
 
 window.onload = initMap;
 
-
-//DEFAULT GOOGLE CODE
-/** Hides a DOM element and optionally focuses on focusEl. */
+//GOOGLE API CODE
+/** Hides place details when you click back button. */
 function hideElement(el, focusEl) {
   el.style.display = "none"
   if (focusEl) focusEl.focus()
 }
 
-/** Shows a DOM element that has been hidden and optionally focuses on focusEl. */
+/** Shows places details when you click on place name or marker. */
 function showElement(el, focusEl) {
   el.style.display = "block"
   if (focusEl) focusEl.focus()
 }
 
-/** Determines if a DOM element contains content that cannot be scrolled into view. */
-function hasHiddenContent(el) {
-  const noscroll = window.getComputedStyle(el).overflowY.includes("hidden")
-  return noscroll && el.scrollHeight > el.clientHeight
-}
-
-/** Format a Place Type string by capitalizing and replacing underscores with spaces. */
-function formatPlaceType(str) {
-  const capitalized = str.charAt(0).toUpperCase() + str.slice(1)
-  return capitalized.replace(/_/g, " ")
-}
-
-/** Number of POIs to show on widget load. */
-const ND_NUM_PLACES_INITIAL = 12
+//I Determined this
+const ND_NUM_PLACES_INITIAL = 8
 
 /**Defines an instance of the Neighborhood Discovery widget, to be instantiated when the Maps library is loaded.*/
 function NeighborhoodDiscovery(configuration) {
@@ -253,7 +240,6 @@ function NeighborhoodDiscovery(configuration) {
       )
 
       const request = { placeId: placeId, fields: missingFields }
-      let retryCount = 0
       const processResult = function (result, status) {
         // Basic details.
         if (result.name) place.name = result.name
@@ -319,7 +305,7 @@ function NeighborhoodDiscovery(configuration) {
     //Renders the specified place data for the first place.
     const renderPlaceResults = function (places, startIndex) {
       //fetches place text
-      //clears place text (from Chat GPT)
+      //clears place text so buildings don't repeat on place list (from Chat GPT)
       placeResultsEl.innerHTML = "";
       placeResultsEl.insertAdjacentHTML("beforeend", resultsTemplate({ places: places }),)
 
