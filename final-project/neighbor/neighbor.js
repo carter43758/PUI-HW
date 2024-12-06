@@ -72,7 +72,7 @@ function populateBuildingInfo(place) {
     }
     
     else {
-      setTimeout(waitForElement, 1000); // Check again after 100 milliseconds
+      setTimeout(waitForElement, 200); // Check again after 100 milliseconds
     }
   };
 
