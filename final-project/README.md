@@ -57,9 +57,6 @@ I had to add the API keys as secrets in GitHub settings for my repository, add s
 ## Part 6: Generative AI Use and Reflection
 
 ### Usage Experiences by Project Aspects
-
-For the following aspects of your project, edit the corresponding table cell to answer:
-
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | ChatGPT | Usage | **No** | **N**o | **Yes** | **Yes** | **No** |
@@ -69,11 +66,11 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
+  - ChatGPT did a much better job than I anticipated at identifiying Google Maps API code without me prompting it. My earlier prompts explained what I was trying to do, but I realized I didn't need to and could instead ask about specific elements and have it automatically interpret what I was trying to do based on the code I uploaded.
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
+  - ChatGPT was a bit less helpful at 
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
+  - 
 
 > Use patterns
 * I accepted the generations when …  For example, 
@@ -89,9 +86,6 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 
 ### Usage Log
-
-Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
-
 1. ChatGPT
    - https://chatgpt.com/share/67531e04-27a8-8003-9493-d4b098342813
    - https://chatgpt.com/share/67531e26-35e0-8003-9a9a-2527cc9704d4
