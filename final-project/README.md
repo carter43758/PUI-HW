@@ -58,9 +58,8 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| ChatGPT | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-
+| ChatGPT | Usage | **No** | **N**o | **Yes** | **Yes** | **No** |
+| Tool1 | Productivity | 4 | 4 | 5 | 6 | 4 |
 
 ### Usage Reflection
 
