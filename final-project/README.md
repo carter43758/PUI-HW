@@ -1,3 +1,17 @@
+Screen Sizes
+- Tested on Chrome & Safari in public & private browsing sessions
+- Tested on Laptop L (1440 x 1065) and Tablet (768 x 993)
+_
+WAVE Screenshots_
+Homepage
+![Screenshot 2024-12-06 at 18 01 34](https://github.com/user-attachments/assets/018b68bf-fc53-456d-a504-85c7e6f78548)
+
+Geolocator
+![Screenshot 2024-12-06 at 18 01 43](https://github.com/user-attachments/assets/1f32c72c-5dd7-4b80-a491-589cc92a9247)
+
+Campus Map
+![Screenshot 2024-12-06 at 18 01 59](https://github.com/user-attachments/assets/0bf85164-51a6-43b7-a4ab-2accf9c0484b)
+
 **FP4 \- Final Project Writeup**
 
 Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) to make your writeup more organized, and you can preview your markdown file in VSCode [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). 
