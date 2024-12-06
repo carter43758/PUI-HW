@@ -44,7 +44,9 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+My original design for the neighborhood page combined the start and geolocator pages all into one, which made the initial user flow very clunky. It also had too much info about buildings (like reviews, photos, etc) that made the map harder to navigate and cluttered the more important building info. After stripping that down, I tried to make a new screen using the Commutes API with step by step written directions for each building (as seen in FP2) but was not able to pull the current location through from the geolocator screen through there, so I abandoned it and instead chose to create a Google Maps link instead.
+
+
 
 ## Part 5: Implementation Challenge
 
