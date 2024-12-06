@@ -6,31 +6,31 @@ function changePage() {
 const buildingInfo = {
   "Wean Hall": {
     entranceFloor: 5,
-    elevator: "Yes - 3 min average wait",
+    elevator: "Yes - walk straight from entrance. ~3 min wait",
     stairs: "2 mins to Floor 2, 2 mins to Floor 8",
     ramps: "No"
   },
   "Scaife Hall": {
     entranceFloor: 1,
-    elevator: "Yes - 30 sec wait",
+    elevator: "Yes - walk straight from entrance. ~30 sec wait",
     stairs: "1 min to Floor 2, 2 mins to Floor 3",
     ramps: "Yes"
   },
   "Tepper School of Business": {
     entranceFloor: 2,
-    elevator: "Yes - walk straight from entrance. Average 1 min wait.",
+    elevator: "Yes - walk straight from entrance. ~1 min wait.",
     stairs: "2 mins to Floor 1, 1 min to Floor 3, 2 min to Floor 4",
     ramps: "Yes"
   },
   "Wiegand Gymnasium": {
     entranceFloor: 1,
-    elevator: "Yes - 1 min wait",
+    elevator: "Yes - make a left from entrance. ~1 min wait.",
     stairs: "1 min to Floor 2, 1 min to LL",
     ramps: "No"
   },
   "Newell-Simon Hall": {
     entranceFloor: 3,
-    elevator: "Yes",
+    elevator: "Yes - make right from entrace. ~2 min wait.",
     stairs: "1 min to Floor 4, 3 mins to Floor 1",
     ramps: "No"
   },
@@ -42,7 +42,7 @@ const buildingInfo = {
   },
   "Marketplace": {
     entranceFloor: 2,
-    elevator: "Yes - 1 min wait",
+    elevator: "Yes - make 2 rights from main floor. ~1 min wait",
     stairs: "1 min to Floor 1, 3 mins to LL",
     ramps: "No"
   },
