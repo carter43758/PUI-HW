@@ -68,22 +68,33 @@ I had to add the API keys as secrets in GitHub settings for my repository, add s
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
   - ChatGPT did a much better job than I anticipated at identifiying Google Maps API code without me prompting it. My earlier prompts explained what I was trying to do, but I realized I didn't need to and could instead ask about specific elements and have it automatically interpret what I was trying to do based on the code I uploaded.
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  - ChatGPT was a bit less helpful at 
+  - ChatGPT was a bit less helpful at fixing some of my basic JS functionality errors than I expected. For example, it was able to tell me how to link a button to a new window, but couldn't help me figure out functions to link a Google Maps URL to a specific action, or store coordinates in local storage from one page to another. I had to figure those out myself.
+  - Moreover, ChatGPT was also not as helpful at helping me figure out the API Key issue I talked about in Part 5. I had to rely on stack overflow, reddit, and other MHCI cohort members for help figuring out environment files, github secrets, and specific settings within Google Cloud that allowed APIs to be linked directly for particular pages.
+  - ChatGPT also wasn't able to explain specific variable name choices and the layered functions within the base API code because of the character limits on my queries. There were sooo many and I had to write them down and figure out their relationships on my own, which was the 2nd most difficult part of the project behind figuring out how to properly deploy the API keys. 
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  - 
+  - Overall, ChatGPT had no effect on what I built at a fundamental level. As soon as I saw the neighborhood discovery API preview in the Maps Platform Toolkit, I knew I wanted to use that as a my base and modify it to fit campus dimensions and directions. It was a great benefit in debugging and formatting my code for specific issues, but didn't help me understand the API or figure out what edits I wanted to make.
 
 > Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
+* I accepted the generations when …  For example,
+  -  It helped me figure out the changePage() function.
+  -  function changePage(url) {
+    // Check if the URL is provided
+    if (url) {
+        window.location.href = url; // Navigate to the new page
+    } else {
+        console.error("URL not provided.");
+    }
+}
 * I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-
+  - It could onyl offer "Verify the nextPlaceIndex and startIndex values during each call" and "Ensure asynchronous behavior does not trigger repeated calls to renderPlaceResults" for why place results were showing up twice. I had to enter a new query for another part of my code to figure out I had to reset the inner text each time the sidebar loaded.
+    
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
+  - Easy and quick feedback
+  - Stored logs that I could go back to 
 * Cons
-  1. Tool1: 
-
+  - Limited ability to process large amounts of API code
+  - Unable to parse variable names across functions
 
 ### Usage Log
 1. ChatGPT
