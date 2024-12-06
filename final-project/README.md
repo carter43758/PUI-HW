@@ -48,7 +48,9 @@ Describe how you iterated on your prototypes, if at all, including any changes y
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+My biggest challenge was getting my API keys I generated from Google Cloud to actually work on the deplayed github website links. There weren't any necessary permissions to use them locally, so I didn't think abotu it much until I tried to deploy FP2 for the first time and completed crashed my functionality - it even stopped working on the local files. 
+
+I had to add the API keys as secrets in GitHub settings for my repository, add specific HTML5 permissions on the settings of my keys in Google for each specific page I was using them for, a limit which APIs they could call to just the 3-4 I was using for each page.
 
 ## Part 6: Generative AI Use and Reflection
 
