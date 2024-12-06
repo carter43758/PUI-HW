@@ -105,7 +105,10 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Implementation Plan Updates
 
-- [ ] ...
+- [ ] Focus more on usability by breaking up flows into multiple screens (intro + location + neighborhood)
+- [ ] Add CMU branding
+- [ ] Find a way to show manually API keys in github without them crashing when I deploy
+- [ ] Get unique google maps link for each query vs a static one
 
 ## Generative AI Use Plan Updates
 
