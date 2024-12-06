@@ -16,8 +16,6 @@ Campus Map
 
 **FP4 \- Final Project Writeup**
 
-Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) to make your writeup more organized, and you can preview your markdown file in VSCode [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). 
-
 ## Part 1: Website Description
 
 Describe your website (300 words).
