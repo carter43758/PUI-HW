@@ -7,27 +7,39 @@ Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/
 
 Describe your website (300 words).
 
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+My website is a navigation super app designed to provide more accurate walking directions to buildings on CMU’s campus from your current location. The target audience is new students to CMU, regardless of where they live, whether that’s on campus, just off campus, or fairly far away. I do default to walking directions so in the case of someone like me (who lives up 5th Ave), the app would be less useful, as the minimum walking time to campus is 25 mins.
+
+The super app was born out of my frustrations figuring out where buildings are once I got to campus as well as not knowing what floors I entered buildings on. Getting to class the first few weeks took longer than expected because I had to take stairs/elevators once I got inside a building. The default campus map was overly cluttered and confusing to me and Google/Apple maps led me to weird locations that weren’t accessible (like the bottom of Wean or the back of Scaife).
+
+My website conveys the following information: your current location, the location of the most popular buildings on campus, relevant building info for the building you click, more accurate estimated walking times, and a customized link to step by step directions to the building’s coordinates in Google Maps. 
+
+My website is interesting and engaging because it breaks down a complicated user flow into a simpler one. Seeing a map with pins of every building relative to your location helps decrease the cognitive load to create a mental model of your POIs (points of interest) on campus. Moreover, step by step directions mapped onto each POI (when you click on it) will reduce the stress and anxiety students feel about getting to class so they can focus more on doing well in class.
 
 ## Part 2: User Interaction
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. Read the homepage description to learn more about the super app.
+2. Click on start to enter the Google Maps API
+3. Click on the location button to fetch your current location and receive its coordinates
+4. Click on the open campus map button to enter the campus map with your current location saved
+5. Click on a pin or name of the building you’d like to go to
+6. Scroll to read more about the building
+7. Click on “step by step directions” to launch walking directions in Google Maps
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+
+1. Google Maps Geolocator API
+- I chose this API to easily determine your location on screen 2. I used it as part of my javascript code (new.js) and manually recreated it from a solution in Google Maps’ platform library since a premade solution doesn’t exist for it.
+- I manually coded the ability for your location coords to be saved to local storage after determining them, the popup telling you your location, and the “open campus map” button and its functionality to move you to the next screen (cited in my code).
+
+2. Google Maps Neighborhood Discovery API
+- This API served as the backbone for my site’s UI. It allowed me to store pre-made places from Google Maps using their placeID on a map with a start location and display the info about them on a click.
+- I made a pre-made solution in the Maps Platform webkit and generated an API key for it, then copied that into my js and made tons of edits to allow for more visible markers in blue and red, mapping your current location, showing walking directions instead of driving, and more (all cited.
+- I deleted the pre-filled info from them like photos, URLs, and descriptions of the building type from js and manually added Building Info for each building myself.
 
 ## Part 4: Design Iteration
 
