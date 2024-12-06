@@ -40,7 +40,7 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 - I made a pre-made solution in the Maps Platform webkit and generated an API key for it, then copied that into my js and made tons of edits to allow for more visible markers in blue and red, mapping your current location, showing walking directions instead of driving, and more (all cited.
 - I deleted the pre-filled info from them like photos, URLs, reviews, and descriptions of the building type from js and manually added Building Info for each building myself (seen below).
 
-![image](https://github.com/user-attachments/assets/f6f4041c-44e0-4ea0-a697-857c5f45f51b)# 
+![image](https://github.com/user-attachments/assets/f6f4041c-44e0-4ea0-a697-857c5f45f51b) 
 
 ## Part 4: Design Iteration
 
