@@ -48,9 +48,12 @@ Describe how you iterated on your prototypes, if at all, including any changes y
 
 ## Part 5: Implementation Challenge
 
-My biggest challenge was getting my API keys I generated from Google Cloud to actually work on the deplayed github website links. There weren't any necessary permissions to use them locally, so I didn't think abotu it much until I tried to deploy FP2 for the first time and completed crashed my functionality - it even stopped working on the local files. 
+My biggest challenge was getting my API keys I generated from Google Cloud to actually work on the deplayed github website links. There weren't any necessary permissions to use them locally, so I didn't think about it much until I tried to deploy FP2 for the first time and completely crashed my functionality - it even stopped working on the local files.
 
 I had to add the API keys as secrets in GitHub settings for my repository, add specific HTML5 permissions on the settings of my keys in Google for each specific page I was using them for, a limit which APIs they could call to just the 3-4 I was using for each page.
+
+<img width="1470" alt="Screenshot 2024-12-06 at 11 00 51 2" src="https://github.com/user-attachments/assets/fc7e9e40-41d8-4022-b532-53db3a4b24d2">
+![Screenshot 2024-12-06 at 11 00 51](https://github.com/user-attachments/assets/ea8b7325-30ce-4886-9168-e960571d6d58)
 
 ## Part 6: Generative AI Use and Reflection
 
@@ -68,30 +71,22 @@ For the following aspects of your project, edit the corresponding table cell to 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
   1. Tool1: 
-  2. Tool2:
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
   1. Tool1: 
-  2. Tool2:
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
   1. Tool1: 
-  2. Tool2:
 
 > Use patterns
 * I accepted the generations when …  For example, 
   1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
 * I critiqued/evaluated the generated suggestions by … For example, 
   1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
-
 
 > Pros and cons of using GenAI tools
 * Pros
   1. Tool1: 
-  2. Tool2:
 * Cons
   1. Tool1: 
-  2. Tool2:
 
 
 ### Usage Log
