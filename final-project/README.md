@@ -107,9 +107,15 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
-
+1. ChatGPT
+   - https://chatgpt.com/share/67531e04-27a8-8003-9493-d4b098342813
+   - https://chatgpt.com/share/67531e26-35e0-8003-9a9a-2527cc9704d4
+   - https://chatgpt.com/share/67531e33-ac4c-8003-a15f-f8ab89aa9a5b
+   - https://chatgpt.com/share/67531e04-27a8-8003-9493-d4b098342813
+   - https://chatgpt.com/share/67531e45-458c-8003-9f32-7bb66c91f1e4
+   - https://chatgpt.com/share/67531e4f-45a0-8003-a488-fb69bdb5f6f2
+   - https://chatgpt.com/share/67531e59-0a80-8003-8119-2b4fa85faaf7
+   - https://chatgpt.com/share/67531e5f-9740-8003-a99e-1b20f061d970
 ---
 
 # **FP3 \- Final Project Check-in**
