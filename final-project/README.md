@@ -1,10 +1,9 @@
-Screen Sizes
-- Tested on Chrome & Safari in public & private browsing sessions
-- Tested on Laptop L (1440 x 1065) and Tablet (768 x 993)
+* Tested on Chrome & Safari in public & private browsing sessions*
+* Tested on Laptop L (1440 x 1065) and Tablet (768 x 993)*
 _
 WAVE Screenshots_
 Homepage
-![Screenshot 2024-12-06 at 18 01 34](https://github.com/user-attachments/assets/018b68bf-fc53-456d-a504-85c7e6f78548)
+![Screenshot 2024-12-06 at 18 03 31](https://github.com/user-attachments/assets/46484eb5-d5d4-4407-aad9-ecf12e8efaa5)
 
 Geolocator
 ![Screenshot 2024-12-06 at 18 01 43](https://github.com/user-attachments/assets/1f32c72c-5dd7-4b80-a491-589cc92a9247)
