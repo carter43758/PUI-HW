@@ -1,7 +1,6 @@
-![image](https://github.com/user-attachments/assets/f6f4041c-44e0-4ea0-a697-857c5f45f51b)# **FP4 \- Final Project Writeup**
+**FP4 \- Final Project Writeup**
 
 Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) to make your writeup more organized, and you can preview your markdown file in VSCode [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). 
-
 
 ## Part 1: Website Description
 
@@ -41,8 +40,7 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 - I made a pre-made solution in the Maps Platform webkit and generated an API key for it, then copied that into my js and made tons of edits to allow for more visible markers in blue and red, mapping your current location, showing walking directions instead of driving, and more (all cited.
 - I deleted the pre-filled info from them like photos, URLs, reviews, and descriptions of the building type from js and manually added Building Info for each building myself (seen below).
 
-https://private-user-images.githubusercontent.com/179495587/382079276-77681ae2-f2b4-459e-a211-ea59eca93bfe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM0OTk3MTgsIm5iZiI6MTczMzQ5OTQxOCwicGF0aCI6Ii8xNzk0OTU1ODcvMzgyMDc5Mjc2LTc3NjgxYWUyLWYyYjQtNDU5ZS1hMjExLWVhNTllY2E5M2JmZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIwNlQxNTM2NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYmZlYzYxMjRjYTgwNmVjZDM5MDMyMmI1Yzc5NzcwMjk5N2VkMDZkNWM3ZjlhODFjNzEwODM1ZmU3YzQwNmFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.c_SEoEdYggMls3fF-PiuWN4VIom_8LPJx_qNNUw7Qak![image](https://github.com/user-attachments/assets/3f1fe275-5df9-4129-9090-8f49423f4524)
-
+![image](https://github.com/user-attachments/assets/f6f4041c-44e0-4ea0-a697-857c5f45f51b)# 
 
 ## Part 4: Design Iteration
 
