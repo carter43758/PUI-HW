@@ -1,8 +1,9 @@
-* Tested on Chrome & Safari in public & private browsing sessions*
-* Tested on Laptop L (1440 x 1065) and Tablet (768 x 993)*
+**Considerations**
+* Tested on Chrome & Safari in public & private browsing sessions
+* Tested on Laptop L (1440 x 1065) and Tablet (768 x 993)
 
-WAVE Screenshots
 
+**WAVE SSs**
 Homepage
 ![Screenshot 2024-12-06 at 18 03 31](https://github.com/user-attachments/assets/46484eb5-d5d4-4407-aad9-ecf12e8efaa5)
 
