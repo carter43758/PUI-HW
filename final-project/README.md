@@ -52,8 +52,7 @@ My biggest challenge was getting my API keys I generated from Google Cloud to ac
 
 I had to add the API keys as secrets in GitHub settings for my repository, add specific HTML5 permissions on the settings of my keys in Google for each specific page I was using them for, a limit which APIs they could call to just the 3-4 I was using for each page.
 
-<img width="1470" alt="Screenshot 2024-12-06 at 11 00 51 2" src="https://github.com/user-attachments/assets/fc7e9e40-41d8-4022-b532-53db3a4b24d2">
-![Screenshot 2024-12-06 at 11 00 51](https://github.com/user-attachments/assets/ea8b7325-30ce-4886-9168-e960571d6d58)
+![Screenshot 2024-12-06 at 11 04 50](https://github.com/user-attachments/assets/78f275a3-fd6e-4280-b4fa-fc1bed420a38)
 
 ## Part 6: Generative AI Use and Reflection
 
