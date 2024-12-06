@@ -1,3 +1,4 @@
+//From Me
 function changePage() {
   window.location.href = 'https://carter43758.github.io/PUI-HW/final-project/location/new.html';
 };
@@ -9,6 +10,7 @@ function saveToLocalStorage() {
   localStorage.setItem('storedCoords', coordinateString);
 }
 
+//from Google
 function initMap() {
   map = new google.maps.Map(document.querySelector("#map"), {
     center: { lat: 40.44512, lng: -79.94327 },
@@ -22,7 +24,7 @@ function initMap() {
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
 
-  //creating neighborhood button
+  //creating neighborhood button - FROM ME
   const neighborButton = document.createElement("button");
   neighborButton.textContent = "Open Campus Map";
   neighborButton.classList.add("custom-map-control-button");
@@ -38,6 +40,7 @@ function initMap() {
             lng: position.coords.longitude,
           };
           infoWindow.setPosition(pos);
+          //FROM ME
           infoWindow.setContent("You are here: " + pos.lat.toFixed(5) + ", " + pos.lng.toFixed(5));
           infoWindow.open(map);
           map.setCenter(pos);
@@ -50,21 +53,12 @@ function initMap() {
     }
   });
 
+  //FROM ME
   neighborButton.addEventListener("click", () => {
     //from ChatGPT    
     window.location.href = 'https://carter43758.github.io/PUI-HW/final-project/neighbor/neighbor.html';
   })
 
-}
-
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(
-    browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your browser doesn't support geolocation.",
-  );
-  infoWindow.open(map);
 }
 
 window.initMap = initMap;

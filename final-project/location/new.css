@@ -2,10 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 1%;
-  padding: 1%;
-  border-style: solid;
-  border-color: darkred;
+  height: 100%;
   font-size: 25px;
 }
 
@@ -15,8 +12,11 @@ body {
   height: 200px;
 }
 
-html,
-body {
+html{
+  margin: 1%;
+  padding: 1%;
+  border-style: solid;
+  border-color: darkred;
   height: 100%;
 }
 
