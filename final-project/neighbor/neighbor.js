@@ -6,57 +6,77 @@ function changePage() {
 const buildingInfo = {
   "Wean Hall": {
     entranceFloor: 5,
-    elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    elevator: "Yes - 3 min average wait",
+    stairs: "2 mins to Floor 2, 2 mins to Floor 8",
+    ramps: "No"
   },
   "Scaife Hall": {
     entranceFloor: 1,
-    elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    elevator: "Yes - 30 sec wait",
+    stairs: "1 min to Floor 2, 2 mins to Floor 3",
+    ramps: "Yes"
   },
   "Tepper School of Business": {
     entranceFloor: 2,
-    elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    elevator: "Yes - walk straight from entrance. Average 1 min wait.",
+    stairs: "2 mins to Floor 1, 1 min to Floor 3, 2 min to Floor 4",
+    ramps: "Yes"
   },
   "Wiegand Gymnasium": {
     entranceFloor: 1,
-    elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    elevator: "Yes - 1 min wait",
+    stairs: "1 min to Floor 2, 1 min to LL",
+    ramps: "No"
   },
   "Newell-Simon Hall": {
     entranceFloor: 3,
     elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    stairs: "1 min to Floor 4, 3 mins to Floor 1",
+    ramps: "No"
   },
   "Morewood Gardens": {
     entranceFloor: 1,
     elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    stairs: "2 mins to Floor 2",
+    ramps: "No"
   },
   "Marketplace": {
-    entranceFloor: 1,
-    elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    entranceFloor: 2,
+    elevator: "Yes - 1 min wait",
+    stairs: "1 min to Floor 1, 3 mins to LL",
+    ramps: "No"
   },
   "Doherty Hall": {
     entranceFloor: 1,
-    elevator: "Yes",
-    stairs: 2,
-    ramps: 4
+    elevator: "Yes - 1-2 min wait",
+    stairs: "2 min to A, 1 min to Floor 2",
+    ramps: "Yes"
   },
 };
 
 function populateBuildingInfo(place) {
   const building = buildingInfo[place.name];
-  floor.innerText = place.name;
+  
+  //MIGHT REQUIRE A REFRESH TO LED THE PLACE DATA LOAD
+  const waitForElement = () => {
+    const floorElement = document.getElementById("floor");
+    const elevatorElement = document.getElementById("elevators");
+    const stairsElement = document.getElementById("stairs");
+    const rampsElement = document.getElementById("ramps"); 
+
+    if (floorElement) {
+      floorElement.innerText = "Floor " + building.entranceFloor;
+      elevatorElement.innerText = "" + building.elevator;
+      stairsElement.innerText = "" + building.stairs;
+      rampsElement.innerText = "" + building.ramps;
+    }
+    
+    else {
+      setTimeout(waitForElement, 100); // Check again after 100 milliseconds
+    }
+  };
+
+  waitForElement();
 }
 
 //setting a clickable maps URL

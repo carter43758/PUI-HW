@@ -14,16 +14,16 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 100%;
   font-size: 25px;
-}
-
-html{
   border-style: solid;
   border-color: darkred;
   margin: 1%;
   padding: 1%;
-  height: 100%;
+  height: 100vh;
+}
+
+html{
+  height: 100vh;
 }
 
 #logo {
@@ -64,7 +64,6 @@ h3 {
 /* Google Auto CSS */
 /* --------------------------- NEIGHBORHOOD PANEL --------------------------- */
 .neighborhood-discovery {
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   flex: 1 1 auto;
   position: relative;
@@ -102,7 +101,7 @@ h3 {
 }
 
 .neighborhood-discovery .panel.no-scroll {
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .neighborhood-discovery .navbar {
@@ -130,16 +129,18 @@ h3 {
   top: 0;
 }
 
+/* Mobile settings */
 @media only screen and (max-width: 640px) {
   .neighborhood-discovery .panel {
-    right: 0;
-    top: 50%;
-    width: unset;
+    right: 50%;
+    width: unset; 
+    overflow-y: auto;
+    height: 100vh;
   }
 
   .neighborhood-discovery .map {
-    bottom: 50%;
-    left: 0;
+    left: 50%;
+    height: 100vh;
   }
 }
 
@@ -148,6 +149,7 @@ h3 {
 .neighborhood-discovery .places-panel {
   box-shadow: 0 0 10px rgb(60 64 67 / 28%);
   z-index: 1;
+  overflow-y: auto;
 }
 
 .neighborhood-discovery .places-panel header {
@@ -187,6 +189,7 @@ h3 {
   cursor: pointer;
   display: flex;
   padding: 0.8em;
+  
 }
 
 .neighborhood-discovery .place-result .text {
@@ -203,6 +206,7 @@ h3 {
 .neighborhood-discovery .details-panel {
   display: none;
   z-index: 20;
+  overflow-x: auto;
 }
 
 .neighborhood-discovery .details-panel .back-button {
@@ -231,18 +235,6 @@ h3 {
 .neighborhood-discovery .details-panel .section {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
   padding: 0.9em;
-}
-
-.neighborhood-discovery .details-panel .contact {
-  align-items: center;
-  display: flex;
-  font-size: 0.9em;
-  margin: 0.8em 0;
-}
-
-.neighborhood-discovery .details-panel .contact .icon {
-  width: 1.5em;
-  height: 1.5em;
 }
 
 .neighborhood-discovery .details-panel .contact .text {
